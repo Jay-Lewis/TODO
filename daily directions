@@ -1,0 +1,49 @@
+------------------------------------
+Current Directions
+------------------------------------
+
+1)
+
+3)
+
+
+
+
+------------------------------------
+Daily Ideas / Directions:
+------------------------------------
+
+1) Angle for selling bayesian CC vs. end to end learning: Bayesian CC allows for uncertainty estimates / calculations. Or more hopefully: allows for a certification algorithm which can guarantee class recovery w.h.p. This seems possible if we have independent, exact (or nearly exact) samples from posterior Pr(c | y). 
+
+. Nearly exact posterior sampling: independently train several neural network to sample from Pr(c | y). Perhaps then boosting could allow us to sample from Pr(c | y) nearly exactly. 
+
+. What if you assume that learned method has the order correct for most likely classes given measurements?
+
+. Can you estimate the gap between the most likely and second most likely class given y with exact posterior samples?
+
+. How do you learn Pr(x | y) / implement a method to learn Pr(x | y)?
+
+2) empirical research into limiting behavior of CC for DPM
+
+
+3) solving CC via MC approximate MAP class estimator with sampling method which is based on finding a set of representative latent samples which match sensing measurements. Perhaps someting can be proven if the samples are sufficiently representative (as measured by an appropriate distribtuional metric).
+
+. Sample from latent space. use these as initialization particles. Optimize to make particles fit the measurements but penalize movement of particles from their initial positions. If resulting particles fit the measurments and do not move much, then they are probably a good approximation to the true posterior?
+
+4) Continue work on theoretically comparing CC to CS given DPM prior
+
+
+5) provable CC for general GMM using my MC approximate MAP class estimator.
+
+
+6) read about general multiple hypothesis testing
+
+
+
+-----------------------------------
+Back burner
+-----------------------------------
+
+* problem application: detection (e.g: facial detection)
+
+* exact posterior sampling for Relu network
