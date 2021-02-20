@@ -1,16 +1,5 @@
 ------------------------------------
-Current Directions
-------------------------------------
-
-1)
-
-3)
-
-
-
-
-------------------------------------
-Daily Ideas / Directions:
+Directions:
 ------------------------------------
 
 1) Angle for selling bayesian CC vs. end to end learning: Bayesian CC allows for uncertainty estimates / calculations. Or more hopefully: allows for a certification algorithm which can guarantee class recovery w.h.p. This seems possible if we have independent, exact (or nearly exact) samples from posterior Pr(c | y). 
