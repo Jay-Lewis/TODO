@@ -1,6 +1,15 @@
-------------------------------------
+# ====================================================================================
 Directions:
-------------------------------------
+# ====================================================================================
+
+* emotion detection through MRI measurements (assuming regions of activity are continuous regions and "seperable")
+
+* problem application: detection (e.g: facial detection)
+
+* QA for MRI imaging through MRI type measurements
+
+
+# --------------------------------------------------------------------------------
 
 1) Angle for selling bayesian CC vs. end to end learning: Bayesian CC allows for uncertainty estimates / calculations. Or more hopefully: allows for a certification algorithm which can guarantee class recovery w.h.p. This seems possible if we have independent, exact (or nearly exact) samples from posterior Pr(c | y). 
 
@@ -29,9 +38,9 @@ Directions:
 
 
 
------------------------------------
+# ====================================================================================
 Back burner
------------------------------------
+# ====================================================================================
 
 * problem application: detection (e.g: facial detection)
 
