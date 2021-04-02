@@ -1,6 +1,10 @@
 # ====================================================================================
-Directions:
+# IDEAS:
 # ====================================================================================
+
+# --------------------------------------------------------------------------------
+# Misc.
+# --------------------------------------------------------------------------------
 
 * emotion detection through MRI measurements (assuming regions of activity are continuous regions and "seperable")
 
@@ -8,9 +12,40 @@ Directions:
 
 * QA for MRI imaging through MRI type measurements
 
+* Cryptonomicon problem:
+. Assume there is some distribution of interest p(x) which may inform an adversary A*
+  about a piece of information I* you wish to keep hidden. Assume that I* can be known
+  fully with near perfect information of p(x). Further, assume your adversary possesses
+  an information channel C with partial access to samples from distribution p(x).
+  Namely, with p_0 probability A* sees x ~ p(x) and with p_1 probability A* sees sample
+  x' ~ p(x') where p(x') is something you can design. The catch is that A* has some
+  side information I^ which allows them to know limitations on what p(x) ought to be.
+  Thus, p(x') must be designed to prevent A* from detecting that you are corrupting
+  the data. How much can you influence A*'s knowledge of I* in this kind of scheme? 
+
+. Things to be defined / specified:
++ information I*
++ how I* is related to p(x)
++ A*'s detector which allows them to know if you significantly
+  corrupted the effective distribution p(x~) = p_0*p(x) + p_1*p(x')
++ how much power do you have in designing p(x') given above?
++ does A* know you are potentially corrupting the data?
+
+. This problem roughly translates to: can you hide outliers / information in noise?
+  
+
+. Example:
+  in the book, the Allies have broken the Axis crytopgrahic cipher known as Enigma.
+  This allows the Allied forces to intercept Axis comms. With this intercepted
+  information, the Allies could positively alter their battle strategy. However,
+  doing so would likely 
 
 # --------------------------------------------------------------------------------
 
+
+# --------------------------------------------------------------------------------
+# Compressed Classification
+# --------------------------------------------------------------------------------
 1) Angle for selling bayesian CC vs. end to end learning: Bayesian CC allows for uncertainty estimates / calculations. Or more hopefully: allows for a certification algorithm which can guarantee class recovery w.h.p. This seems possible if we have independent, exact (or nearly exact) samples from posterior Pr(c | y). 
 
 . Nearly exact posterior sampling: independently train several neural network to sample from Pr(c | y). Perhaps then boosting could allow us to sample from Pr(c | y) nearly exactly. 
@@ -37,11 +72,11 @@ Directions:
 6) read about general multiple hypothesis testing
 
 
+# ------- Back burner ---------------------------
 
-# ====================================================================================
-Back burner
-# ====================================================================================
-
-* problem application: detection (e.g: facial detection)
+* problem application of Compressed classification: detection (e.g: facial detection)
 
 * exact posterior sampling for Relu network
+
+
+# --------------------------------------------------------------------------------
